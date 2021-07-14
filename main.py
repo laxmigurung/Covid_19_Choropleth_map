@@ -57,7 +57,7 @@ fig.update_layout(
         showframe=True,
         showcoastlines=True,
     ),
-
+# Display the source for the dataset
 annotations = [dict(
     x=0.55,
     y=0.1,
@@ -68,5 +68,7 @@ annotations = [dict(
     showarrow=False
 )]
 )
-
+# Display the map
 fig.show()
+fig.write_html("fileName.html")
+
